@@ -1,13 +1,117 @@
-body {
+*{
+  box-sizing: border-box;
+}
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: rgba(255, 255, 255, 1);
+  background-color: #999;
+}
+.container{
+  height: 550px;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.header-container{
+  width: 550px;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container .img-container{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.header-container img{
+  width: 31px;
+  padding-right: 6px;
+}
+.header-container h1{
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.header-container h2{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 37px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: rgba(13, 13, 13, 1);
+  padding: 10px;
+  width: 230px;
+  height: 35px;
+  border: 1px solid rgba(213, 212, 216, 1);
+  border-radius: 5px;
+  margin-right: 17px;
+}
+form{
+  margin: 37px 37px 0 37px;
+  display: flex;
+}
+button{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  width: 477px;
+  height: 40px;
+  margin-left: 37px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+button:hover{
+  filter: brightness(1.1);
+}
+.meme-container{
+  width: 550px;
+}
+.meme-container img{
+  width: 477px;
+  height: 268px;
+  display: block;
+  margin: 37px;
+  border-radius: 2px;
+}
+.meme-img-container{
+  position: relative;
+}
+.meme-container .text-1{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 32px;
+  line-height: 39.03px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 900;
+  top: 16px;
+  left: 177px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 1);
+}
+.meme-container .text-2{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 32px;
+  line-height: 39.03px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 900;
+  bottom: 16px;
+  left: 103px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 1);
 }
